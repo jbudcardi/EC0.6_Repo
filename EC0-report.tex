@@ -54,17 +54,17 @@
 \pagestyle{fancy}
 \fancyhf{}
 \rhead{\small \thepage}
-\chead{\small CS 532, Spring 2024} 
-\lhead{\small HW\#, Last Name}  % EDIT THIS, REPLACE # with HW number
+\chead{\small CS 532, Fall 2024} 
+\lhead{\small EC 0.6 - Reports, Cartwright}  % EDIT THIS, REPLACE # with HW number
 
 %-------------------------------------------------------------------------
 \begin{document}
 
 % EDIT THE ITEMS HERE
 \begin{centering}
-{\large\textbf{HW\# - Title}}\\ 
-Your Name\\
-Due Date\\
+{\large\textbf{EC 0.6 - Reports}}\\ 
+John Cartwright\\
+08 Sep 24\\
 \end{centering}
 
 %-------------------------------------------------------------------------
@@ -94,17 +94,13 @@ Figure \ref{fig:web-growth} shows the growth in the number of websites between 1
 Listing \ref{lst:copy} is an example of directly copying code into the LaTeX document and having the listings package perform syntax highlighting. Listing \ref{lst:import} is an example of importing the code from a file rather than copying it in.
 
 %Python code highlighting
-\begin{lstlisting}[language=Python, caption=Python example copied into the LaTeX, label=lst:copy]
+\begin{lstlisting}[language=Python, caption=Python print example string, label=lst:copy]
 #!/usr/local/bin/python3
 # testargs.py
 
-import sys
+x = "This is LaTeX!"
 
-print ("{} is the name of the script." . format(sys.argv[0]))
-print ("There are {} arguments: {}" . format(len(sys.argv), str(sys.argv)))
-
-for ind, arg in enumerate(sys.argv):
-    print ("[{}]: {} {}".format(ind,arg,sys.argv[ind]))
+print(x)
 \end{lstlisting}
 
 %Importing code from file
@@ -119,9 +115,10 @@ Table \ref{tbl:simple} shows a simple example table.  Table \ref{tbl:confusion} 
 \begin{tabular}{|l|l|l|}
 \hline
 \textbf{Week} & \textbf{Date} & \textbf{Topic} \\ \hline \hline
-1 & Sep 1, 3 & Introduction, What's Vis and Why Do It? \\ \hline
-2 & Sep 8, 10 & Data and Data Cleaning \\ \hline
-3 & Sep 15, 17 & Marks and Channels \\ \hline
+1 & Aug 24 & Introduction to Web Science and Web Architecture \\ \hline
+2 & Aug 31 & Introduction to Python \\ \hline
+3 & Sep 7 & Measuring the Web \\ \hline
+4 & Sep 14 & Searching the Web \\ \hline
 \end{tabular}
 \end{table}
 
@@ -176,8 +173,10 @@ Figure \ref{fig:subfigure-ex} shows an example of grouping related figures into 
 \emph{Every report must list the references that you consulted while completing the assignment. If you consulted a webpage, you must include the URL.}
 
 \begin{itemize}
-    \item {Stack Overflow, How can I parse (read) and use JSON in Python?, \url{https://stackoverflow.com/questions/7771011/how-can-i-parse-read-and-use-json-in-python}}
-    \item{ChatGPT conversation, Initial prompt: "write a python line to detect if a string ends with .png", \url{https://chat.openai.com/share/5de76e93-c26b-4665-a0fc-b782b01a9285}}
+    \item {Overleaf, Git Integration and GitHub Synchronization, \url{https://www.overleaf.com/learn/how-to/Git_Integration_and_GitHub_Synchronization}}
+    \item{Communications of the ACM, Web Science: An Interdisciplinary Approach to Understanding the Web, \url{https://cacm.acm.org/research/web-science/}}
+    \item {YouTube, What is Web Science,
+    \url{https://www.youtube.com/watch?v=demjTp3A55A}}
 \end{itemize}
 
 \end{document}
